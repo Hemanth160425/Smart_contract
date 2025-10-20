@@ -1,55 +1,58 @@
 
-# 🛡️ High-Velocity Smart Contract Auditing Practice
 
-## 🎯 **The 2 Contracts a Day Challenge**
+# 🌐 **Ethereum Security Masterclass**
 
-This repository documents my intensive, personal commitment to building and deploying **two distinct Ethereum smart contracts every single day**. This high-tempo development exercise is specifically designed to accelerate my journey toward becoming a world-class **Ethereum smart contract security auditor and bug bounty hunter**.
+## 🛡️ The 2 Contracts a Day Challenge & Web3 Compass S3
+
+This repository is a live, high-intensity training environment dedicated to accelerated mastery of **Solidity smart contract security and auditing**. It documents a rigorous personal commitment to building and analyzing **two functional Ethereum contracts every single day.**
+
+This challenge merges high-volume development with the structured curriculum of the **Web3 Compass 30 Days of Solidity - Season 3**, ensuring both breadth and depth of technical exposure essential for professional bug bounty hunting.
 
 -----
 
-## 🔍 **Security & Technical Focus**
+## 🎯 **Core Objective: Mastery Through Volume**
 
-Every contract developed focuses on a specific learning objective, often centered around a known vulnerability, a complex DeFi pattern, or an optimization technique.
+The entire repository is built with a singular focus: to train the "auditor's eye" through constant, deliberate practice.
 
-| Category | Description | Key Topics Explored |
+| Goal | Description | Expected Outcome |
 | :--- | :--- | :--- |
-| **Vulnerability Mastery** | Implement and then secure contracts against common and complex attack vectors. | **Reentrancy**, Access Control, Time Dependency, Transaction Ordering (TOB), Signature Replay. |
-| **Protocol Primitives** | Hands-on experience with core DeFi building blocks and token standards. | ERC-20, ERC-721, Vesting, Staking, Simple Swaps, Governance (Voting). |
-| **Advanced Solidity** | Dive into modern and efficient Solidity design and deployment practices. | Proxies (EIP-1967), Libraries, Gas Optimization, Custom Errors, Assembly. |
+| **Security First** | Active implementation and demonstration of all major vulnerabilities (e.g., Reentrancy, Call Injection, Logic Flaws, MEV opportunities). | Muscle memory for identifying complex, high-severity bugs in production code. |
+| **Protocol Fluency** | Hands-on development of core DeFi primitives, token standards (ERC-20, ERC-721), and upgradeability patterns. | Deep understanding of how common exploits impact real-world financial protocols. |
+| **High Velocity** | Building and documenting **two fully tested contracts daily** (Challenge + Personal Deep Dive). | Rapidly expanding technical vocabulary and problem-solving speed under pressure. |
 
 -----
 
-## 📂 **Repository Structure & Documentation**
+## 📂 **Repository Structure**
 
-All development work is meticulously organized by date, ensuring transparent and traceable progress. Each daily folder includes the source code, tests, and a specific security breakdown.
+The projects are organized sequentially by the challenge day, making it easy to track progress and specific security research.
 
 ```
 /src
-├── 2025-10-25
-│   ├── TokenVesting.sol      # Contract 1: A financial primitive
-│   ├── FlashLoanExample.sol  # Contract 2: A vulnerability study
-│   └── README.md             # Security analysis and key takeaways for the day
-├── 2025-10-26
+├── Day_04_Auction              # Web3 Compass Day 4 Challenge: Basic Auction
+│   ├── BasicAuction.sol         
+│   ├── VulnerableProxy.sol       # Second, security-focused contract of the day
+│   └── README.md                 # Detailed Security Report & Learnings
+├── Day_05_Vault                # Web3 Compass Day 5 Challenge: Secure Vault
 │   └── ...
+├── Day_X_Custom                 # Future days following the track...
+└── ...
 ```
 
-### **Daily Commit Standard**
+### **Daily Security Report (Example)**
 
-The `README.md` within each daily folder adheres to a rigorous format to capture the immediate learning and security analysis:
+Each folder contains a `README.md` that serves as a **Daily Security Report**. This report is the critical documentation, outlining the **vulnerability addressed** or **design pattern mastered**.
 
-#### **[YYYY-MM-DD] - Daily Security Report**
-
-| Contract | Functionality | Security/Exploit Theme | Status |
-| :--- | :--- | :--- | :--- |
-| **Contract Name 1** | *Brief function summary.* | Focused on preventing **[Specific Vulnerability]**. | Tested & Secured |
-| **Contract Name 2** | *Brief function summary.* | Explored **[Complex Design Pattern]** for gas efficiency. | Tested & Optimized |
+| Contract | Theme | Key Security Takeaway |
+| :--- | :--- | :--- |
+| **Challenge Contract** | **DeFi Primitive** | **CEI pattern** enforced to secure against Reentrancy; analyzed risks of **time dependency** for bidding deadlines. |
+| **Personal Contract** | **Advanced Vulnerability** | Identified and exploited a **storage slot collision** in an uninitialized proxy, documenting the path from bug to fix. |
 
 -----
 
-## 🛠️ **Tooling & Environment**
+## 🛠️ **Development Stack**
 
   * **Language:** **Solidity** (Targeting latest stable version).
-  * **Framework:** **Foundry** (For high-speed testing and development) and/or **Hardhat**.
-  * **Testing:** Comprehensive **unit and fuzz tests** are written to prove functionality and ensure security properties are maintained.
+  * **Framework:** **Foundry** (Prioritized for speed, powerful fuzz testing, and robust scripting).
+  * **Methodology:** **Security-First, Test-Driven Development (TDD)** is strictly applied, ensuring the tests prove both functionality and the absence of known vulnerabilities.
 
-This challenge is a high-volume, security-first investment designed to build the muscle memory required for top-tier smart contract auditing.
+This repository is my commitment to mastering the Ethereum security landscape. I welcome code reviews and discussions from the auditing community.
