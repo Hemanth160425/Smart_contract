@@ -55,4 +55,4 @@ Each folder contains a `README.md` that serves as a **Daily Security Report**. T
   * **Framework:** **Foundry** (Prioritized for speed, powerful fuzz testing, and robust scripting).
   * **Methodology:** **Security-First, Test-Driven Development (TDD)** is strictly applied, ensuring the tests prove both functionality and the absence of known vulnerabilities.
 
-This repository is my commitment to mastering the Ethereum security landscape. I welcome code reviews and discussions from the auditing community.
+This repository is my commitment to mastering the Ethereum security landscape. I welcome code reviews and discussion from the auditing community.
